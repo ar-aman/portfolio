@@ -1,58 +1,89 @@
 header{
+    border-radius: 15px;
     padding: 20px;
-    background-color: aliceblue;
+    background-color:  rgb(245, 245, 220);
     font-weight: bolder;
     color: grey;
     display: block;
-    text-align: center;
     position: static;
+    scroll-behavior: smooth;
 }
 body{
+    border-radius: 15px;
     max-width: 100%;
     overflow-x: hidden;
     font-size: 25px;
-    background-color: rgb(40, 38, 38);
-    color: azure;
-    
-}
-.profile_pic{
-    image-orientation: initial;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%; 
-    height: "0";
-    width: "200";   
+    background-color: white;
+    color: black;
 }
 .about{
+    border-radius: 15px;
     font-size: 25px;
-    color: azure;
+    color: black;
+    background-color:rgb(255, 207, 157);
+    padding: 100px;
 
 }
 .projects{
+    border-radius: 15px;
     padding: 20px;
-    background-color: #ef9b0f;
+    background-color:rgb(255, 176, 0);
     font-weight: bolder;
-    color: azure;;
+    color: black;
+    padding: 100px;
 }
 .education{
+    border-radius: 15px;
     padding: 20px;
-    background-color: #ed5b07;
+    background-color: rgb(0, 173, 181);
     font-weight: bolder;
-    color: azure;;
-}
-.profile{
-    padding: 20px;
-    background-color: darkolivegreen;
-    font-weight: bolder;
-    color: azure;
+    color: black;
+    padding: 100px;
 }
 .contact{
     padding: 20px;
-    background-color: darkslateblue;
+    background-color: rgb(0, 66, 37);
     font-weight: bolder;
     color: azure;
+    padding: 100px;
     
+}
+.column{
+    float: left;
+    width: 43%;
+    padding: 20px;
+    background-color: aliceblue;
+    margin: 20px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 50px;
+}
+.column1{
+    float: left;
+    width: 25%;
+    padding: 21px;
+    background-color: aliceblue;
+    margin: 33px;
+    display: table;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 50px;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.column_edu{
+    float: left;
+    width: 40%;
+    padding: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+img{
+    max-width: 50%;
+    max-height: 50%;
 }
