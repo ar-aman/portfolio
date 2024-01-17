@@ -87,3 +87,7 @@ img{
     max-width: 50%;
     max-height: 50%;
 }
+
+.column1:hover{
+    background-color: #bbe4e9;
+}
