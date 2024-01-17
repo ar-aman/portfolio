@@ -1,7 +1,7 @@
 header{
     border-radius: 15px;
     padding: 20px;
-    background-color:  rgb(245, 245, 220);
+    background-color:  #ffffff;
     font-weight: bolder;
     color: grey;
     display: block;
@@ -13,21 +13,21 @@ body{
     max-width: 100%;
     overflow-x: hidden;
     font-size: 25px;
-    background-color: white;
+    background-color: #ffffff;
     color: black;
 }
 .about{
     border-radius: 15px;
     font-size: 25px;
     color: black;
-    background-color:rgb(255, 207, 157);
+    background-color:#bbe4e9;
     padding: 100px;
 
 }
 .projects{
     border-radius: 15px;
     padding: 20px;
-    background-color:rgb(255, 176, 0);
+    background-color:#79c2d0;
     font-weight: bolder;
     color: black;
     padding: 100px;
@@ -35,17 +35,18 @@ body{
 .education{
     border-radius: 15px;
     padding: 20px;
-    background-color: rgb(0, 173, 181);
+    background-color: #53a8b6;
     font-weight: bolder;
     color: black;
     padding: 100px;
 }
 .contact{
     padding: 20px;
-    background-color: rgb(0, 66, 37);
+    background-color: #5585b5;
     font-weight: bolder;
     color: azure;
     padding: 100px;
+    border-radius: 15px;
     
 }
 .column{
@@ -81,6 +82,7 @@ body{
     padding: 50px;
     padding-top: 0px;
     padding-bottom: 0px;
+    
 }
 
 img{
