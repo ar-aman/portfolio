@@ -68,7 +68,7 @@ header.scrolled .navigation a{
     align-items: center;
     text-align: center;
     height: 100vh;
-    background: radial-gradient(beige 10%, rgb(245, 245, 220, 0.806),rgb(46, 46, 46), rgb(36, 36, 36)) no-repeat;
+    background:(images/cover.jpg) no-repeat;
     background-size: 95% 90%;
     background-position: center;
     background-attachment: fixed;
