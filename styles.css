@@ -1,95 +1,235 @@
-header{
-    border-radius: 15px;
-    padding: 20px;
-    background-color:  #ffffff;
-    font-weight: bolder;
-    color: grey;
-    display: block;
-    position: static;
-    scroll-behavior: smooth;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+
+/* Names: Walnut brown, Golden brown, Night, Dim gray, Onyx
+Hex Codes: #615545, #9B773D, #121112, #646263, #444243 */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
+
 body{
-    border-radius: 15px;
-    max-width: 100%;
-    overflow-x: hidden;
-    font-size: 25px;
-    background-color: #ffffff;
-    color: black;
+    background:#121112;
+    color: beige;
+    font-weight: lighter;
 }
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0.8%;
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121112;
+    z-index: 100;
+    transition: background-color 0.5s ease-in-out;
+}
+
+header.scrolled {
+    background-color:#121112;
+    opacity: 0.98;
+
+}
+
+.navigation a {
+    position: relative;
+    font-size: 100%;
+    color: #121112;
+    font-weight: lighter;
+    text-decoration: none;
+    margin: 0.5%;
+    padding: 6px 15px;
+    transition: 0.5s ease-in-out;
+}
+
+header.scrolled .navigation a{
+    color: white;
+}
+
+.navigation a:hover{
+    color: black
+}
+
+.cover
+{
+    position: relative;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background: radial-gradient(beige 10%, rgb(245, 245, 220, 0.806),rgb(46, 46, 46), rgb(36, 36, 36)) no-repeat;
+    background-size: 95% 90%;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 5%;
+    color:rgb(36, 36, 36);
+}
+
+#text{
+    position: fixed;
+}
+
+.text{
+    padding: 1%;
+}
+
+h1{
+    font-size: x-large;
+    font-weight: lighter;
+}
+
+h3{
+    font-size: large;
+    font-weight: lighter;
+}
+
+.quote{
+    padding: 5%;
+    font-weight: 100;
+    font-size: large;
+    text-align: center;
+}
+
+section{
+    padding: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: medium;
+}
+
+.skills{
+    justify-content: center;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    flex-flow: row wrap;
+}
+
+.column_skills{
+    width: fit-content;
+    font-weight: 400;
+    font-size: 80%;
+    padding: 1.2%;
+    background: rgb(50, 50, 50);
+    color: beige;
+    margin: 1%;
+    transition: 0.5s ease-in-out;
+}
+
+.column_skills:hover{
+    font-size: medium;
+}
+
 .about{
-    border-radius: 15px;
-    font-size: 25px;
-    color: black;
-    background-color:#bbe4e9;
-    padding: 100px;
-
+    justify-content: center;
+    align-items: center;
+    background: rgb(36, 36, 36);
 }
+
+.column-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 5px 0px;
+  }
+
 .projects{
-    border-radius: 15px;
-    padding: 20px;
-    background-color:#79c2d0;
-    font-weight: bolder;
-    color: black;
-    padding: 100px;
-}
-.education{
-    border-radius: 15px;
-    padding: 20px;
-    background-color: #53a8b6;
-    font-weight: bolder;
-    color: black;
-    padding: 100px;
-}
-.contact{
-    padding: 20px;
-    background-color: #5585b5;
-    font-weight: bolder;
-    color: azure;
-    padding: 100px;
-    border-radius: 15px;
-    
-}
+
+} 
+
 .column{
-    float: left;
-    width: 43%;
-    padding: 20px;
-    background-color: aliceblue;
-    margin: 20px;
+    flex: 1;
+    margin: 5px;
+    position: relative;
+    background: rgb(36, 36, 36);
+    padding: 1%;
+}
+
+@media screen and (max-width: 680px) {
+    .column-container .column {
+        margin-bottom: 0.5%;
+        flex-basis: 100%;
+    }
+}
+
+.column img{
+    width: 100%;
+    height: auto;
+    display: flex;
+    filter: brightness(0.7);
+    /* border-radius: 10%; */
+}
+
+.overlay{
+    /* border-radius: 10%; */
+    width: 100%;
+    height: 50%;
+    top: -50;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    background-color: rgb(39, 39, 39);
+    color: beige;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.column:hover .overlay{
+    opacity: 0.98;
+}
+
+.contact{
+    background: rgb(36, 36, 36);
+}
+
+.links{
+    text-align: center;
     display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr;
-    border-radius: 50px;
-}
-.column1{
-    float: left;
-    width: 25%;
-    padding: 21px;
-    background-color: aliceblue;
-    margin: 33px;
-    display: table;
-    align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    border-radius: 50px;
-}
-.row:after{
-    content: "";
-    display: table;
-    clear: both;
-}
-.column_edu{
-    float: left;
-    width: 40%;
-    padding: 50px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    
 }
 
-img{
-    max-width: 50%;
-    max-height: 50%;
+.links a{
+    width: 70%;
+    padding: 1%;
+    background-color: #121112;
+    color: beige;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-block: 1%;
+    text-decoration: none;
+    font-weight: lighter;
 }
 
-.column1:hover{
-    background-color: #bbe4e9;
+footer{
+    background-color: rgb(29,29,29);
+    color: beige;
+    font-weight: lighter;
+    padding-top: 0.3%;
+    padding-left: 0.2%;
+    padding-right: 0.2%;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: beige;
 }
