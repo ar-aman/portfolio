@@ -206,7 +206,7 @@ section{
 .column:hover .overlay{
     -webkit-transform: scale(0);
     -ms-transform: scale(0);
-    transform: scale(1);
+    transform: scale(0);
 }
 
 .contact{
