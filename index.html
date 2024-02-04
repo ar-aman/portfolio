@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>aman-raj-portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -15,19 +15,28 @@
         <!-- <h1 class="logo">Aman <br> Raj</h1> -->
         <nav class="navigation">
             <a href="#about">About<span></span></a>
-            <a href="#skills">Skills<span></span></a>
+            <a href="#expertise">Expertise<span></span></a>
             <a href="#projects">Projects<span></span></a>
             <a href="#contact">Contact<span></span></a>
         </nav>
     </header>
-    <section class="cover">
-            <h1 class="text">Aman Raj <br> Data Scientist | Data Analyst</h1>
+    <section class="landing">
+        <div class="cover">
+            <div class="cover_column" style="width: 40%;">
+                <img class="profile_img" src="images/profile_bw.png" alt="">
+            </div>
+            <div class="cover_column" >
+                <h1>Aman Raj</h1>
+                <br>
+                <h3>Data Scientist | Data Analyst <br> Front-end Developer</h3>
+            </div>
+        </div>
     </section>
-    <section class="skills" id="skills">
+    <section class="expertise" id="expertise">
         <div class="quote">
            <p><img src="images/66.png" alt=""">                     I want to help others to make the right decisions, data-driven decisions.                     <img src="images/99.png" alt="""></p>
         </div>
-        <h1>Expertise</h1>
+        <h1>MY EXPERTISE</h1>
         <hr>
         <br>
         <p>As a data science enthusiast, I translate data into valuable and comprehensible insights. My goal is to improve results, make the right decisions and save costs.
@@ -68,6 +77,7 @@
                     <p class="column_skills">HTML</p>
                     <p class="column_skills">CSS</p>
                     <p class="column_skills">JavaScript</p>
+                    <p class="column_skills">SQL</p>
                 </div>
             </div>
             <div class="column" style="padding: 3%;">
@@ -76,6 +86,7 @@
                 <p>Knowledge of data structures fuels my ability to utilize trees, hash tables, linked lists, and arrays for efficient data management in diverse programming scenarios.</p>
                 <div class="row">
                     <p class="column_skills">Java</p>
+                    <p class="column_skills">Python</p>
                 </div>
             </div>
         </div>
@@ -84,8 +95,7 @@
         <h1>ABOUT</h1>
         <hr>
         <br>
-        <p>
-            Hey there! I'm Aman, a tech enthusiast diving into the world of Artificial Intelligence and Data Science for my Bachelor's degree.
+        <p class="column_about" style="width: 100%;">            Hey there! I'm Aman, a tech enthusiast diving into the world of Artificial Intelligence and Data Science for my Bachelor's degree.
             <br>
             Ever since I was a kid, I've been drawn to solving puzzles, and to me, big data sets are just one massive puzzle waiting to be cracked. Uncovering hidden patterns that others might miss is the ultimate thrill for me.
             <br>
@@ -109,7 +119,7 @@
             </div>
             <div class="column">
                 <img src="images/webdev_project.gif" alt="Front-end Projects">
-                <a class="overlay" href="https://ar-aman.github.io/portfolio/" target="_blank"><p>Front-end Projects</p></a>
+                <a href="" class="overlay"><p>Front-end Projects</p></a>
             </div>
         </div>
     </section>
