@@ -147,9 +147,10 @@ header.scrolled .navigation a{
     position: relative;
     height: 100vh;
     width: 99vw;
-    background: linear-gradient(360deg, black, rgba(0,255,0,0) 80.71%),
-                linear-gradient(127deg, #121112, rgba(0,255,0,0) 80.71%),
-                linear-gradient(217deg, rgba(245, 245, 220, 0.858), rgba(0,255,0,0) 60.71%);
+    background: linear-gradient(360deg, black, rgba(0,255,0,0) 70.71%),
+                linear-gradient(90deg, #121112, rgba(0,255,0,0) 70.71%),
+                linear-gradient(-90deg, #121112, rgba(0,255,0,0) 70.71%),
+                linear-gradient(180deg, beige, rgba(0,255,0,0) 80.71%);
     font-family: 'Kalam', sans-serif;
 }
 
@@ -166,9 +167,9 @@ header.scrolled .navigation a{
     width: 30vh;
     /* padding: 0.5vh; */
     background-color: transparent;
-    border: 1vh double beige;
+    border: 1vh solid beige;
     border-radius: 100%;
-    /* box-shadow: 0 0 4vh rgb(187, 177, 164); */
+    box-shadow: 0 0 4vh rgb(187, 177, 164);
     
 }
 
@@ -193,7 +194,7 @@ header.scrolled .navigation a{
         width: 20vh;
         padding: 0.5vh;
         border: 1vh;
-        border-style: double;
+        border-style: solid;
     }
     .title h1{
         font-size: 200%;
@@ -215,7 +216,7 @@ header.scrolled .navigation a{
         width: 25vh;
         padding: 0.5vh;
         border: 1vh;
-        border-style: double;
+        border-style: solid;
     }
     .title h1{
         font-size: 200%;
