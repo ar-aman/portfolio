@@ -1,22 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
-
-
-/* Names: Walnut brown, Golden brown, Night, Dim gray, Onyx
-Hex Codes: #615545, #9B773D, #121112, #646263, #444243 */
-
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 body{
-    background:#121112;
+    background: black;
     color: beige;
     font-weight: lighter;
+}
+
+h1{
+    font-size: x-large;
+    font-weight: lighter;
+}
+
+h3{
+    font-size: large;
+    font-weight: lighter;
+}
+
+section{
+    padding: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: medium;
+    font-family: 'Poppins', sans-serif;
 }
 
 header {
@@ -32,10 +44,11 @@ header {
     background-color: transparent;
     z-index: 100;
     transition: background-color 0.5s ease-in-out;
+    font-family: 'Poppins', sans-serif;
 }
 
 header.scrolled {
-    background-color:#121112;
+    background-color:  #121212;
     opacity: 0.98;
 
 }
@@ -43,7 +56,7 @@ header.scrolled {
 .navigation a {
     position: relative;
     font-size: 100%;
-    color: #121112;
+    color: #111112;
     font-weight: lighter;
     text-decoration: none;
     margin: 0.5%;
@@ -57,66 +70,165 @@ header.scrolled .navigation a{
     opacity: 1;
 }
 
-.landing{
-    display: flex;
-    height: 100vh;
+.dropbtn {
+    width: 80%;
+    padding: 10%;
+    border: none;
+    cursor: pointer;
+    display: none;
+    opacity: 0;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #121212;
     width: 100vw;
-    align-items: center;
-    justify-content: center;
-    background:   #071013;
-    padding: 2%;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: beige;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown a:hover {background-color: #ddd;}
+  
+.show {
+    display: block;
 }
 
-.cover{
+@media screen and (max-width: 580px)
+{
+    header{
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .navigation a{
+        /* margin: 0.1vw;
+        padding: 0.1vw; */
+        display: none;
+    }
+    header.scrolled img{
+        display: block;
+        opacity: 1;
+    }
+    section{
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
+}
+
+@media screen and (max-width: 300px)
+{
+    .navigation a{
+        display: none;
+    }
+    header.scrolled img{
+        display: block;
+        opacity: 1;
+    }
+    section{
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+}
+
+.landing{
+    position: relative;
+    height: 100vh;
+    width: 99vw;
+    background: linear-gradient(360deg, black, rgba(0,255,0,0) 80.71%),
+                linear-gradient(127deg, #121112, rgba(0,255,0,0) 80.71%),
+                linear-gradient(217deg, rgba(245, 245, 220, 0.858), rgba(0,255,0,0) 60.71%);
+    font-family: 'Kalam', sans-serif;
+}
+
+.img{
     display: flex;
-    flex-flow: row wrap;
-    align-items: center;
     justify-content: center;
+    align-items: end;
+    height: 50vh;
+    width: 100%;
 }
 
-.cover_column{
-    flex: 1;
-    padding: 2%;
-    min-width: 270px;
-    align-items: center;
-    justify-content: center;
+.img img{
+    filter: brightness(1);
+    width: 30vh;
+    /* padding: 0.5vh; */
+    background-color: transparent;
+    border: 1vh double beige;
+    border-radius: 100%;
+    /* box-shadow: 0 0 4vh rgb(187, 177, 164); */
+    
 }
 
-.cover_column h1{
+.title{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2vh;
+}
+
+.title h1{
     font-size: 300%;
 }
 
-.cover_column h3{
+.title h3{
     font-size: 150%;
 }
 
-.profile_img{
-    float: right;
-    width: 50%;
-    border: 1vw;
-    border-color: beige;
-    border-style: double;
-    padding: 1%;
-    border-radius: 50%;
-}
-
 @media screen and (max-width: 650px){
-    .profile_img{
-        float: none;
+    .img img{
+        width: 20vh;
+        padding: 0.5vh;
+        border: 1vh;
+        border-style: double;
     }
-    .cover_column{
-        padding: 3%;
+    .title h1{
+        font-size: 200%;
+    }
+    .title h3{
+        font-size: 100%;
     }
 }
 
-h1{
-    font-size: x-large;
-    font-weight: lighter;
+@media screen and (max-height: 500px){
+    header{
+        height: 10vh;
+    }
+
+    .img{
+        height: 40vh;
+    }
+    .img img{
+        width: 25vh;
+        padding: 0.5vh;
+        border: 1vh;
+        border-style: double;
+    }
+    .title h1{
+        font-size: 200%;
+    }
+    .title h3{
+        font-size: 100%;
+    }
 }
 
-h3{
-    font-size: large;
-    font-weight: lighter;
+@media screen and (max-width: 300px){
+    .title h3{
+        font-size: 95%;
+    }
 }
 
 .quote{
@@ -124,13 +236,6 @@ h3{
     font-weight: 100;
     font-size: large;
     text-align: center;
-}
-
-section{
-    padding: 5%;
-    padding-left: 15%;
-    padding-right: 15%;
-    font-size: medium;
 }
 
 .expertise{
@@ -153,7 +258,7 @@ section{
     background: rgb(50, 50, 50);
     color: beige;
     margin: 1%;
-    transition: 0.5s ease-in-out;
+    transition: 0.1s ease-in-out;
 }
 
 .column_skills:hover{
@@ -178,9 +283,9 @@ section{
     margin: 5px 0px;
   }
 
-.projects{
+/* .projects{
 
-} 
+}  */
 
 .column{
     flex: 1;
@@ -188,6 +293,7 @@ section{
     position: relative;
     background: rgb(36, 36, 36);
     padding: 1%;
+
 }
 
 @media screen and (max-width: 680px) {
@@ -209,6 +315,7 @@ section{
     bottom: 0;
     left: 0;
     right: 0;
+    border: 1px solid beige;
     background-color: rgb(36, 36, 36);
     overflow: hidden;
     width: 100%;
@@ -221,7 +328,7 @@ section{
 }
 
 .overlay p{
-    color: white;
+    color: beige;
     font-size: 20px;
     position: absolute;
     top: 50%;
@@ -238,34 +345,53 @@ section{
     transform: scale(0);
 }
 
-.contact{
+.connect{
     background: rgb(36, 36, 36);
 }
 
 .links{
     text-align: center;
-    display: grid;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .links a{
-    width: 70%;
+    width: 40%;
     padding: 1%;
     background-color: #121112;
     color: beige;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 1%;
+    margin-right: 1%;
     margin-block: 1%;
     text-decoration: none;
     font-weight: lighter;
+    transition: 0.1s ease-in-out;
+}
+
+@media screen and (max-width: 300px)
+{
+    .links a{
+        font-size: 4vw;
+    }
+}
+
+.links a:hover{
+    border: 0.1vh solid;
+    border-color: rgba(245, 245, 220, 0.881);
+
 }
 
 footer{
-    background-color: rgb(29,29,29);
+    background-color: rgb(29, 29, 29);
     color: beige;
+    font-family: 'Kalam';
     font-weight: lighter;
-    padding-top: 0.3%;
+    padding-top: 0.5%;
     padding-left: 0.2%;
     padding-right: 0.2%;
+    padding-bottom: 0.5%;
     text-align: center;
 }
 footer a{
