@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aman-raj-portfolio</title>
+    <title>Aman's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -17,25 +17,37 @@
             <a href="#about">About<span></span></a>
             <a href="#expertise">Expertise<span></span></a>
             <a href="#projects">Projects<span></span></a>
-            <a href="#contact">Contact<span></span></a>
+            <a href="#connect">Connect<span></span></a>
         </nav>
+        <div class="dropdown">
+            <img onclick="myFunction()" class="dropbtn" src="images/nav.png" alt="">
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#expertise">Expertise<span></span></a>
+                <a href="#about">About<span></span></a>
+                <a href="#projects">Projects<span></span></a>
+                <a href="#connect">Connect<span></span></a>
+            </div>
+        </div>
     </header>
     <section class="landing">
-        <div class="cover">
-            <div class="cover_column" style="width: 40%;">
-                <img class="profile_img" src="images/profile_bw.png" alt="">
-            </div>
-            <div class="cover_column" >
-                <h1>Aman Raj</h1>
-                <br>
-                <h3>Data Scientist | Data Analyst <br> Front-end Developer</h3>
-            </div>
+        <div class="img">
+            <img src="images/profile_.png" alt="">
+        </div>
+        <div class="title">
+            <h1>Aman Raj</h1>
+        </div>
+        <div class="title">
+            <h3>Data Scientist | Data Analyst </h3>
+        </div>
+            <div class="title">
+            <h3>Front-end Developer</h3>
         </div>
     </section>
     <section class="expertise" id="expertise">
         <div class="quote">
            <p><img src="images/66.png" alt=""">                     I want to help others to make the right decisions, data-driven decisions.                     <img src="images/99.png" alt="""></p>
         </div>
+        <br>
         <h1>MY EXPERTISE</h1>
         <hr>
         <br>
@@ -110,21 +122,21 @@
         <br>
         <div class="column-container">
             <div class="column">
-                <img src="images/datanalysis_project.gif" alt="Data Analysis Projects">
-                <a class="overlay" href="https://github.com/ar-aman/PowerBI_Sales_Analysis_Dashboard" target="_blank"><p>Data Analysis Project</p></a>
+                <a href="projects.html#da" target="_blank"><img src="images/datanalysis_project.gif" alt="Data Analysis Projects"></a>
+                <a class="overlay" href="projects.html#da" target="_blank"><p>Data Analysis Project</p></a>
             </div>
             <div class="column">
-                <img src="images/datascience_projects.gif" alt="Data Science Projects">
-                <a  class="overlay" href="https://github.com/ar-aman/Stock-Prediction-Web-Application/" target="_blank"><p>Data Science Projects</p></a>
+                <a href="projects.html#ds" target="_blank"><img src="images/datascience_projects.gif" alt="Data Science Projects"></a>
+                <a  class="overlay" href="projects.html#ds" target="_blank"><p>Data Science Projects</p></a>
             </div>
             <div class="column">
-                <img src="images/webdev_project.gif" alt="Front-end Projects">
-                <a href="" class="overlay"><p>Front-end Projects</p></a>
+                <a href="projects.html#wd" ><img src="images/webdev_project.gif" alt="Front-end Projects"></a>
+                <a href="projects.html#wd" class="overlay"><p>Front-end Projects</p></a>
             </div>
         </div>
     </section>
-    <section class="contact" id="contact">
-        <h1>CONTACT</h1>
+    <section class="connect" id="connect">
+        <h1>CONNECT</h1>
         <hr>
         <br>
         <div class="links">
