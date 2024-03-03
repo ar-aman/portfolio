@@ -83,7 +83,10 @@ header {
     display: block;
 }
   
-.dropdown a:hover {background-color: #ddd;}
+.dropdown a:hover {
+    background-color: #ddd;
+    color: #121212;
+}
   
 .show {
     display: block;
