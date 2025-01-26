@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman's Portfolio</title>
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <header>
+        <nav class="navigation">
+            <a href="#about">About<span></span></a>
+            <a href="#expertise">Expertise<span></span></a>
+            <a href="#projects">Projects<span></span></a>
+            <a href="#connect">Connect<span></span></a>
+        </nav>
+        <div class="dropdown">
+            <img onclick="myFunction()" class="dropbtn" src="images/nav.png" alt="">
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#expertise">Expertise<span></span></a>
+                <a href="#about">About<span></span></a>
+                <a href="#projects">Projects<span></span></a>
+                <a href="#connect">Connect<span></span></a>
+            </div>
+        </div>
+    </header>
+    <section class="landing">
+        <div class="img">
+            <img class="logo" src="images/logo.png" alt="">
+        </div>
+        <div class="title">
+            <h1>Aman Raj</h1>
+        </div>
+        <div class="title">
+            <h3>Python Developer | Data Analyst </h3>
+        </div>
+            <div class="title">
+            <h3>Fullstack Web Developer</h3>
+        </div>
+    </section>
+    <section class="expertise" id="expertise">
+        <div class="quote">
+           <p><img src="images/66.png" alt=""">                     I want to help others to make the right & data-driven decisions.                     <img src="images/99.png" alt="""></p>
+        </div>
+        <br>
+        <h1>MY EXPERTISE</h1>
+        <hr>
+        <br>
+        <p>A skilled software developer proficient in building robust web applications using Python, Django, MERN stack and PostgreSQL. Experienced in designing systems for automation and real-time processing, with expertise in integrating OpenCV, PaddleOCR, and TensorFlow for innovative solutions that achieve high accuracy and performance. </p>
+        <div class="column-container">
+            <div class="column" style="padding: 3%;">
+                <h3>Data Analysis</h3>
+                <hr style="margin-bottom: 3%;">
+                <p>I am specialized in analyzing and visualizing data. Results, trends and recommendations are clearly presented in reports or tools.</p>
+                <div class="row">
+                    <p class="column_skills">Python</p>
+                    <p class="column_skills">SQL</p>
+                    <p class="column_skills">NumPy</p>
+                    <p class="column_skills">Pandas</p>
+                    <p class="column_skills">Matplotlib</p>
+                    <p class="column_skills">Seaborne</p>
+                    <p class="column_skills">Spreadsheets</p>
+                    <p class="column_skills">PowerBI</p>
+                </div>
+            </div>
+            <div class="column" style="padding: 3%;">
+                <h3>Machine Learning</h3>
+                <hr style="margin-bottom: 3%;">
+                <p>Understanding of machine learning algorithms and python libraries help me extract valuable insights and predictions from datasets of various sizes.</p>
+                <div class="row">
+                    <p class="column_skills">Python</p>
+                    <p class="column_skills">Tensorflow</p>
+                    <p class="column_skills">Keras</p>
+                    <p class="column_skills">NLP</p>
+                    <p class="column_skills">OCR</p>
+                </div>
+            </div>
+        </div>
+        <div class="column-container">
+            <div class="column" style="padding: 3%;">
+                <h3>Fullstack Web Development</h3>
+                <hr style="margin-bottom: 3%;">
+                <p>As a web developer, I help to design and create the perfect website, that are optimized for desktop and smartphone.</p>
+                <div class="row">
+                    <p class="column_skills">HTML</p>
+                    <p class="column_skills">CSS</p>
+                    <p class="column_skills">JavaScript (Backend)</p>
+                    <p class="column_skills">React.js</p>
+                    <p class="column_skills">Express.js</p>
+                    <p class="column_skills">MongoDB</p>
+                </div>
+            </div>
+            <div class="column" style="padding: 3%;">
+                <h3>Data Engineering</h3>
+                <hr style="margin-bottom: 3%;">
+                <p>Knowledge of data orchestration fuels my ability to utilize resources for efficient real-time data procressing in diverse programming scenarios.</p>
+                <div class="row">
+                    <p class="column_skills">PySpark</p>
+                    <p class="column_skills">AWS</p>
+                    <p class="column_skills">Airflow</p>
+                    <p class="column_skills">Snowflake</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <h1>ABOUT</h1>
+        <hr>
+        <br>
+        <p class="column_about" style="width: 100%;">            Hey there! I'm Aman, a tech enthusiast diving into the world of Artificial Intelligence and Data Science for my Bachelor's degree.
+            <br>
+            Ever since I was a kid, I've been drawn to solving puzzles, and to me, big data sets are just one massive puzzle waiting to be cracked. Uncovering hidden patterns that others might miss is the ultimate thrill for me.
+            <br>
+            But hey, it's not all about data – I've got a thing for tackling DSA problems too. It's like a workout for my problem-solving muscles, and I love the challenge it brings.
+            <br><br>
+            I've cooked up some cool projects that let me turn complex questions into easy-to-digest insights. If you're into decoding the mysteries of data or cracking coding challenges, let's chat – because in my world, every problem is just another opportunity to find a solution!
+        </p>
+    </section>
+    <section class="projects" id="projects">
+        <h1>PROJECTS</h1>
+        <hr>
+        <br>
+        <div class="column-container">
+            <div class="column">
+                <a href="projects.html#da" target="_blank"><img src="images/datanalysis_project.gif" alt="Data Analysis Projects"></a>
+                <a class="overlay" href="projects.html#da" target="_blank"><p>Data Analysis Project</p></a>
+            </div>
+            <div class="column">
+                <a href="projects.html#ds" target="_blank"><img src="images/datascience_projects.gif" alt="Data Science Projects"></a>
+                <a  class="overlay" href="projects.html#ds" target="_blank"><p>Machine Learning Projects</p></a>
+            </div>
+            <div class="column">
+                <a href="projects.html#wd" ><img src="images/webdev_project.gif" alt="Front-end Projects"></a>
+                <a href="projects.html#wd" class="overlay"><p>Web Development Projects</p></a>
+            </div>
+        </div>
+    </section>
+    <section class="connect" id="connect">
+        <h1>CONNECT</h1>
+        <hr>
+        <br>
+        <div class="links">
+            <a href="http://linkedin.com/in/ar-aman-raj" target="_blank">LINKEDIN</a>
+            <a href="http://github.com/ar-aman" target="_blank">GITHUB</a>
+            <a href="https://www.commudle.com/users/amanr" target="_blank">COMMUDLE</a>
+            <a href="projects.html" target="_blank">PROJECTS</a>
+            <a href="https://drive.google.com/file/d/1g2kiVqfuwQ98C0w1u-FYc212RIgBI4Rc/view?usp=sharing" target="_blank">RESUME</a>
+        </div>
+    </section>
+    <footer>
+        <p>Aman Raj</p>
+        <a href="mailto:amanraj02722@gmail.com">amanraj02722@gmail.com</a>
+        <br>
+        <br>
+        <p>Location</p>
+        <p>Greater Noida, India</p>
+        <br>
+        <p>© 2025 Aman Raj</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
