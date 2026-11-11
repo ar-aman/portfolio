@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#111111">
+    <title>Aman Raj — AI Engineer, Software Developer &amp; Data Scientist</title>
+    <meta name="description" content="Aman Raj — AI Engineer, Software Developer and Data Scientist. Explore experience, personal projects and skills in backend development, AI and data.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Aman Raj — AI Engineer, Software Developer &amp; Data Scientist">
+    <meta property="og:description" content="Profile, experience, personal projects and high-level professional work in backend development, AI and data science.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Aman Raj — AI Engineer, Software Developer &amp; Data Scientist">
+    <meta name="twitter:description" content="Personal projects and skills in Python, full-stack development, AI and data.">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        (() => {
+            try {
+                const saved = localStorage.getItem('theme');
+                if (saved === 'light' || saved === 'dark') document.documentElement.dataset.theme = saved;
+            } catch (error) {
+                console.warn('Theme preference storage is unavailable.', error);
+            }
+            document.querySelector('meta[name="theme-color"]').content =
+                document.documentElement.dataset.theme === 'light' ? '#FAFAF7' : '#111111';
+        })();
+    </script>
+    <script src="script.js" defer></script>
+</head>
+<body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="topbar">
+        <nav class="wrap nav" aria-label="Main navigation">
+            <a class="brand" href="#top" aria-label="Aman Raj, back to top">ar<span>.</span></a>
+            <div class="nav-links" id="nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-controls">
+                <button class="icon-btn theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme" hidden>
+                    <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>
+                    <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14A8.5 8.5 0 0 1 10 3.5 8.5 8.5 0 1 0 20.5 14Z"/></svg>
+                </button>
+                <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links" hidden>
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="hero wrap" id="about" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <h1 id="hero-title">Aman Raj<span>.</span></h1>
+                <p class="hero-role">AI Engineer <span>|</span> Software Developer <span>|</span> Data Scientist</p>
+                <p class="hero-intro">I build Python backends, AI applications and data-driven tools. My work spans APIs, retrieval systems, machine learning pipelines and data analysis using Python, FastAPI, Django and PostgreSQL.</p>
+                <p class="hero-detail">Currently a Data Scientist at <strong>Mahindra &amp; Mahindra</strong> in Bengaluru. My personal projects explore computer vision, natural language processing, data visualization and web development.</p>
+                <div class="actions">
+                    <a class="button primary" href="#projects">View projects <span aria-hidden="true">↗</span></a>
+                    <a class="text-link" href="#skills">Explore my skills <span aria-hidden="true">↘</span></a>
+                    <a class="text-link" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+            <div class="hero-bottom"><span>BENGALURU, INDIA <span class="small-cross" aria-hidden="true">+</span></span><a href="#experience">EXPERIENCE <span aria-hidden="true">↓</span></a></div>
+        </section>
+
+        <section class="section wrap" id="experience" aria-labelledby="experience-title">
+            <div class="section-heading" data-reveal><p class="eyebrow"><span>01 /</span> PROFESSIONAL BACKGROUND</p><h2 id="experience-title">Experience</h2></div>
+            <div class="experience-list">
+                <article class="experience-row" data-reveal>
+                    <div class="experience-date"><span class="timeline-dot"></span><div class="experience-period"><span><time datetime="2025-12">DEC 2025</time> — PRESENT</span><span class="experience-duration" data-start-month="2025-12">11 months</span></div><span class="current-label">CURRENT</span></div>
+                    <div><h3>Data Scientist</h3><p class="organization">Mahindra &amp; Mahindra <span>· Bengaluru</span></p><p>Developing AI applications and backend services, with a focus on retrieval workflows, asynchronous processing and ML platform orchestration.</p><ul><li>Python, FastAPI and PostgreSQL for APIs and data access.</li><li>LLM integration, vector search and document-processing pipelines.</li><li>Model lifecycle workflows, background processing and CI/CD.</li></ul></div>
+                </article>
+                <article class="experience-row" data-reveal>
+                    <div class="experience-date"><span class="timeline-dot"></span><div class="experience-period"><span><time datetime="2025-05">MAY</time> — <time datetime="2025-11">NOV 2025</time></span><span class="experience-duration" data-start-month="2025-05" data-end-month="2025-11">7 months</span></div></div>
+                    <div><h3>Associate Data Scientist</h3><p class="organization">Mahindra &amp; Mahindra <span>· Bengaluru</span></p><p>Worked on Python backend development, database-backed workflows, retrieval-based recommendations and reporting automation.</p></div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+            <div class="wrap">
+                <div class="section-heading heading-split" data-reveal><div><p class="eyebrow"><span>02 /</span> SELECTED WORK</p><h2 id="projects-title">Projects</h2></div></div>
+                <div class="project-tabs" role="tablist" aria-label="Project type" hidden>
+                    <button class="project-tab" type="button" id="professional-tab" role="tab" aria-selected="true" aria-controls="professional-panel">Professional</button>
+                    <button class="project-tab" type="button" id="personal-tab" role="tab" aria-selected="false" aria-controls="personal-panel" tabindex="-1">Personal</button>
+                </div>
+                <div class="project-panel" id="personal-panel">
+                <h3 class="project-group-heading">Personal projects</h3>
+                <div class="personal-projects">
+                    <article class="personal-project" data-category="ml" data-reveal>
+                        <img class="project-image" src="images/freshnesscalculator.png" alt="Freshness detection application interface" width="640" height="400" loading="lazy">
+                        <div class="personal-project-content">
+                        <p class="project-category">COMPUTER VISION / OCR</p>
+                        <h3>FreshVision</h3>
+                        <p>A Django application for fruit and vegetable freshness detection and product-brand identification, combining image analysis with OCR.</p>
+                        <ul class="tech-list" aria-label="FreshVision technologies"><li>TensorFlow</li><li>OpenCV</li><li>PaddleOCR</li><li>Django</li><li>PostgreSQL</li></ul>
+                        <a class="text-link" href="https://github.com/ar-aman/Brand-Identification-and-Freshness-Detection" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span><span class="sr-only"> — FreshVision (opens in a new tab)</span></a>
+                        </div>
+                    </article>
+                    <article class="personal-project" data-category="ml" data-reveal>
+                        <img class="project-image" src="images/plant.png" alt="Plant disease classification application" width="640" height="400" loading="lazy">
+                        <div class="personal-project-content">
+                        <p class="project-category">DEEP LEARNING / COMPUTER VISION</p>
+                        <h3>Plant Disease Detection</h3>
+                        <p>A leaf-image classifier with a Django interface. TensorFlow and Keras handle classification, while Gemini generates remedy and report details.</p>
+                        <ul class="tech-list" aria-label="Plant Disease Detection technologies"><li>TensorFlow</li><li>Keras</li><li>Django</li><li>Gemini</li></ul>
+                        <a class="text-link" href="https://github.com/ar-aman/Plant-Disease-Classification" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span><span class="sr-only"> — Plant Disease Detection (opens in a new tab)</span></a>
+                        </div>
+                    </article>
+                    <article class="personal-project" data-category="ml" data-reveal>
+                        <img class="project-image" src="images/ds1.png" alt="Stock trend prediction charts" width="640" height="400" loading="lazy">
+                        <div class="personal-project-content">
+                        <p class="project-category">TIME SERIES / DEEP LEARNING</p>
+                        <h3>Stock Trend Prediction</h3>
+                        <p>A Streamlit application using an LSTM model to forecast stock trends and visualize predicted values alongside historical prices.</p>
+                        <ul class="tech-list" aria-label="Stock Trend Prediction technologies"><li>LSTM</li><li>Pandas</li><li>NumPy</li><li>Matplotlib</li><li>Streamlit</li></ul>
+                        <a class="text-link" href="https://stock-prediction-web.streamlit.app/" target="_blank" rel="noopener noreferrer">Open on Streamlit <span aria-hidden="true">↗</span><span class="sr-only"> — Stock Trend Prediction (opens in a new tab)</span></a>
+                        <p class="hosting-note">Streamlit sign-in may be required.</p>
+                        </div>
+                    </article>
+                    <article class="personal-project" data-category="ml" data-reveal>
+                        <img class="project-image" src="images/ds2.png" alt="Twitter sentiment analysis application" width="640" height="400" loading="lazy">
+                        <div class="personal-project-content">
+                        <p class="project-category">NATURAL LANGUAGE PROCESSING</p>
+                        <h3>Twitter Sentiment Analysis</h3>
+                        <p>Classifies tweets using TF-IDF and logistic regression. Supports individual text inputs and Excel uploads for bulk sentiment analysis.</p>
+                        <ul class="tech-list" aria-label="Sentiment Analysis technologies"><li>scikit-learn</li><li>NLP</li><li>Pandas</li><li>Streamlit</li></ul>
+                        <a class="text-link" href="https://twitter-sentiment-analysis-web-application.streamlit.app/" target="_blank" rel="noopener noreferrer">Open on Streamlit <span aria-hidden="true">↗</span><span class="sr-only"> — Twitter Sentiment Analysis (opens in a new tab)</span></a>
+                        <p class="hosting-note">Streamlit sign-in may be required.</p>
+                        </div>
+                    </article>
+                </div>
+                </div>
+                <div class="professional-work project-panel" id="professional-panel">
+                    <h3 class="project-group-heading">Professional projects</h3>
+                    <p class="section-note">Selected responsibilities and technologies. Business figures and internal implementation details are omitted.</p>
+                    <div class="company-projects">
+                        <article class="company-project" data-reveal>
+                            <header><p class="project-category">MULTIMODAL RAG ASSISTANT</p><h4>M-Agent</h4></header>
+                            <div class="company-project-content">
+                                <div><h5>Problem statement</h5><p>Technical reports contain information across text, tables and figures. Finding a relevant answer requires searching lengthy documents, understanding the context and checking the original source.</p></div>
+                                <div><h5>My contribution</h5><p>Built the assistant end to end, covering document ingestion, multimodal retrieval, backend APIs and a conversational interface. Added source citations, conversation memory and processing visibility to help users follow answers back to the supporting documents.</p></div>
+                                <div class="company-project-skills"><h5>Skills</h5><ul class="tech-list" aria-label="M-Agent skills"><li>Python</li><li>FastAPI</li><li>pgvector</li><li>LLM integration</li></ul></div>
+                            </div>
+                        </article>
+                        <article class="company-project" data-reveal>
+                            <header><p class="project-category">ENTERPRISE WORKFLOWS &amp; REPORTING</p><h4>M-Budget Management</h4></header>
+                            <div class="company-project-content">
+                                <div><h5>Problem statement</h5><p>Budget preparation involves coordinating reviews across teams, tracking changing estimates and referring to historical information. The application brings these activities together with consistent workflows and reporting.</p></div>
+                                <div><h5>My contribution</h5><p>Served as a lead backend contributor, developing APIs, database-backed workflows and role-based access. Built retrieval-based estimate recommendations and automated presentation reporting, and contributed to review interfaces for the application.</p></div>
+                                <div class="company-project-skills"><h5>Skills</h5><ul class="tech-list" aria-label="M-Budget skills"><li>Python</li><li>FastAPI</li><li>PostgreSQL</li><li>Automation</li></ul></div>
+                            </div>
+                        </article>
+                        <article class="company-project" data-reveal>
+                            <header><p class="project-category">ML PLATFORM &amp; ORCHESTRATION</p><h4>WFT AI Twin</h4></header>
+                            <div class="company-project-content">
+                                <div><h5>Problem statement</h5><p>Physical wheel-force testing requires dedicated vehicle test runs. WFT AI Twin provides a virtual alternative: engineers upload vehicle telemetry CSVs, and machine-learning models predict six wheel-load components (Fx, Fy, Fz, Mx, My, Mz) for each wheel. The platform also supports retraining as new labelled data becomes available.</p></div>
+                                <div><h5>My contribution</h5><p>Developed backend APIs, database access and asynchronous processing workflows. Owned retraining orchestration and contributed to model lifecycle management and results dashboards. My focus was the platform and orchestration; the modeling team developed the predictive models.</p></div>
+                                <div class="company-project-skills"><h5>Skills</h5><ul class="tech-list" aria-label="WFT skills"><li>Python</li><li>Celery</li><li>Redis</li><li>MLOps</li></ul></div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section wrap" id="skills" aria-labelledby="skills-title">
+            <div class="section-heading heading-split" data-reveal><div><p class="eyebrow"><span>03 /</span> TECHNOLOGIES &amp; METHODS</p><h2 id="skills-title">Skills</h2></div><p class="section-note">Across professional work, personal projects and data studies.</p></div>
+            <div class="skill-group" data-reveal><h3>Programming languages</h3><div class="skill-content"><ul class="skill-grid">
+                <li><img src="images/tech/python.svg" alt="" width="28" height="28" loading="lazy"><span>Python</span></li>
+                <li><img src="images/tech/javascript.svg" alt="" width="28" height="28" loading="lazy"><span>JavaScript</span></li>
+            </ul><ul class="skill-tags" aria-label="Additional languages"><li>SQL</li></ul></div></div>
+            <div class="skill-group" data-reveal><h3>Backend &amp; APIs</h3><div class="skill-content"><ul class="skill-grid">
+                <li><img src="images/tech/fastapi.svg" alt="" width="28" height="28" loading="lazy"><span>FastAPI</span></li>
+                <li><img src="images/tech/django.svg" alt="" width="28" height="28" loading="lazy"><span>Django</span></li>
+                <li><img src="images/tech/sqlalchemy.svg" alt="" width="28" height="28" loading="lazy"><span>SQLAlchemy</span></li>
+                <li><img src="images/tech/pydantic.svg" alt="" width="28" height="28" loading="lazy"><span>Pydantic</span></li>
+                <li><img src="images/tech/celery.svg" alt="" width="28" height="28" loading="lazy"><span>Celery</span></li>
+                <li><img src="images/tech/redis.svg" alt="" width="28" height="28" loading="lazy"><span>Redis</span></li>
+            </ul><ul class="skill-tags" aria-label="Backend methods and libraries"><li>REST APIs</li><li>WebSockets</li><li>Streaming APIs</li><li>Alembic</li></ul></div></div>
+            <div class="skill-group" data-reveal><h3>Generative AI &amp; retrieval</h3><div class="skill-content"><ul class="skill-tags" aria-label="Generative AI tools and techniques"><li>Azure OpenAI</li><li>Langchain</li><li>Langraph</li><li>Langsmith</li><li>Azure OpenAI</li>Langfuse<li>Sentence-Transformers</li><li>Multimodal RAG</li><li>LLM orchestration</li><li>Embeddings</li><li>Vector search</li><li>Prompt engineering</li></ul></div></div>
+            <div class="skill-group" data-reveal><h3>Machine learning &amp; vision</h3><div class="skill-content"><ul class="skill-grid">
+                <li><img src="images/tech/tensorflow.svg" alt="" width="28" height="28" loading="lazy"><span>TensorFlow</span></li>
+                <li><img src="images/tech/keras.svg" alt="" width="28" height="28" loading="lazy"><span>Keras</span></li>
+                <li><img src="images/tech/scikitlearn.svg" alt="" width="28" height="28" loading="lazy"><span>scikit-learn</span></li>
+                <li><img src="images/tech/opencv.svg" alt="" width="28" height="28" loading="lazy"><span>OpenCV</span></li>
+                <li><img src="images/tech/paddlepaddle.svg" alt="" width="28" height="28" loading="lazy"><span>PaddleOCR</span></li>
+            </ul><ul class="skill-tags" aria-label="Machine learning techniques"><li>XGBoost</li><li>NLP</li><li>OCR</li><li>CNN</li><li>LSTM</li><li>Regression</li><li>TF-IDF</li><li>PCA</li><li>Classification</li></ul></div></div>
+            <div class="skill-group" data-reveal><h3>Data analysis &amp; visualization</h3><div class="skill-content"><ul class="skill-grid">
+                <li><img src="images/tech/numpy.svg" alt="" width="28" height="28" loading="lazy"><span>NumPy</span></li>
+                <li><img src="images/tech/pandas.svg" alt="" width="28" height="28" loading="lazy"><span>Pandas</span></li>
+            </ul><ul class="skill-tags" aria-label="Analytics tools and techniques"><li>Matplotlib</li><li>Seaborn</li><li>DAX</li><li>Spreadsheets</li><li>Data modeling</li><li>Streamlit</li></ul></div></div>
+            <div class="skill-group" data-reveal><h3>Databases &amp; data engineering</h3><div class="skill-content"><ul class="skill-grid">
+                <li><img src="images/tech/postgresql.svg" alt="" width="28" height="28" loading="lazy"><span>PostgreSQL</span></li>
+                <li><img src="images/tech/mongodb.svg" alt="" width="28" height="28" loading="lazy"><span>MongoDB</span></li>
+                <li><img src="images/tech/googlebigquery.svg" alt="" width="28" height="28" loading="lazy"><span>BigQuery</span></li>
+                <li><img src="images/tech/apachespark.svg" alt="" width="28" height="28" loading="lazy"><span>PySpark</span></li>
+                <li><img src="images/tech/apacheairflow.svg" alt="" width="28" height="28" loading="lazy"><span>Apache Airflow</span></li>
+            </ul><ul class="skill-tags" aria-label="Additional database tools"><li>pgvector</li></ul></div></div>
+            <div class="skill-group" data-reveal><h3>Cloud, DevOps &amp; MLOps</h3><div class="skill-content"><ul class="skill-grid">
+                <li><img src="images/tech/googlecloud.svg" alt="" width="28" height="28" loading="lazy"><span>Google Cloud</span></li>
+                <li><img src="images/tech/amazonwebservices.svg" alt="" width="28" height="28" loading="lazy"><span>AWS</span></li>
+                <li><img src="images/tech/docker.svg" alt="" width="28" height="28" loading="lazy"><span>Docker</span></li>
+                <li><img src="images/tech/kubernetes.svg" alt="" width="28" height="28" loading="lazy"><span>Kubernetes</span></li>
+                <li><img src="images/tech/helm.svg" alt="" width="28" height="28" loading="lazy"><span>Helm</span></li>
+                <li><img src="images/tech/jenkins.svg" alt="" width="28" height="28" loading="lazy"><span>Jenkins</span></li>
+                <li><img src="images/tech/git.svg" alt="" width="28" height="28" loading="lazy"><span>Git</span></li>
+            </ul><ul class="skill-tags" aria-label="MLOps tools and workflows"><li>Vertex AI</li><li>Model registries</li><li>CI/CD</li></ul></div></div>
+        </section>
+
+        <section class="section wrap contact" id="contact" aria-labelledby="contact-title">
+            <p class="eyebrow" data-reveal><span>04 /</span> GET IN TOUCH</p>
+            <h2 id="contact-title" data-reveal>Contact</h2>
+            <div class="contact-bottom" data-reveal>
+                <p>For engineering opportunities, collaborations<br>or a conversation about my work.</p>
+                <a class="email-link" href="mailto:amanraj02722@gmail.com">amanraj02722@gmail.com <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="contact-links">
+                <a class="text-link" href="https://www.linkedin.com/in/ar-aman-raj" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9v11M5 4v.5M10 20V9h4v2c2-4 6-2 6 2v7M14 13v7"/></svg>LinkedIn <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+                <a class="text-link" href="https://github.com/ar-aman" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 21v-4c-4 1-4-2-6-2m12 6v-4c0-1-.3-1.7-1-2 4-.5 6-2 6-5a5 5 0 0 0-1-3 5 5 0 0 0-.2-4L15 5a12 12 0 0 0-6 0L5.2 3A5 5 0 0 0 5 7a5 5 0 0 0-1 3c0 3 2 4.5 6 5-.7.3-1 1-1 2"/></svg>GitHub <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+            </div>
+            <p class="interaction-notice" id="interaction-notice" role="status"></p>
+        </section>
+    </main>
+    <footer class="wrap footer">
+        <span>© <span id="year" class="sr-only">2026</span> Aman Raj</span>
+    </footer>
+</body>
+</html>
